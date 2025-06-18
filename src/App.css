@@ -170,6 +170,54 @@ html {
   overflow: hidden;
 }
 
+@media screen and (max-width: 1366px) {
+  h2 {
+    margin-right: auto; /* remplace les 940px fixes */
+    font-size: x-large;
+    text-align: left;
+  }
+
+  .header-container,
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .roulement {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .roulement img {
+    width: 45%; /* Meilleure adaptation sur petits écrans */
+  }
+
+  .packaging {
+    padding: 20px;
+    font-size: large;
+  }
+
+  h1 {
+    font-size: large;
+  }
+
+  .footer-links a {
+    font-size: 1rem;
+    display: inline-block;
+    margin: 5px 0;
+  }
+}
+
+
 
 
 
