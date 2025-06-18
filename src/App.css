@@ -46,11 +46,12 @@ h2 {
   color: #00e92c;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: xx-large;
+  font-size: clamp(1.5rem, 4vw, 2.5rem); /* Responsive */
   text-shadow: 0 0 2px #00e92c, 0 0 30px #00e92c, 0px 0px 5px #00e92c, 0 0 150px #00e92c;
-  white-space: nowrap; /* Prevent text from wrapping to the next line */
-  margin-right: 940px;
+  white-space: normal; /* Permet le retour à la ligne */
+  margin-right: auto;
 }
+
 
 h1 {
   font-family: "DsDigital-Italic", sans-serif;
@@ -172,9 +173,9 @@ html {
 
 @media screen and (max-width: 1366px) {
   h2 {
-    margin-right: auto; /* remplace les 940px fixes */
-    font-size: x-large;
-    text-align: left;
+    font-size: clamp(1.3rem, 4vw, 2rem);
+    text-align: center;
+    margin: 0 auto;
   }
 
   .header-container,
